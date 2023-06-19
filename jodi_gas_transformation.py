@@ -93,7 +93,7 @@ def cleaning_station():
     location = os.getcwd()
     path = os.path.join(location, file)
     existing_files = glob.glob(path)
-    [os.remove(file) for file in existing_files if file != "/home/rafael/Workspace/shooju-challenge/jodi_gas_transformation.py"]
+    [os.remove(file) for file in existing_files if file != f"{location}/jodi_gas_transformation.py"]
 
 
 if __name__ == "__main__":
